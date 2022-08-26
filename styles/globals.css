@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .link{
+        @apply cursor-pointer hover:outline hover:outline-1 hover:outline-offset-0 hover:rounded-sm pb-[7px] pt-[7px] px-3
+    }
+    .link1{
+        @apply cursor-pointer hover:outline hover:outline-1 hover:outline-offset-0 hover:rounded-sm pb-[3px] pt-[3px] px-1 line-clamp-1
+    }
+    .button{
+        @apply mt-auto p-2 text-xs bg-[#ffd814] hover:bg-[#f7ca00] active:bg-white active:ring-1 active:ring-[#ffd814]
+    }
+    .element{
+        @apply relative z-0 mb-6
+    }
+    .input{
+        @apply block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600
+    }
+    .label{
+        @apply absolute text-sm text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1
+    }
+    .label_select1{
+        @apply absolute text-sm text-gray-400 duration-300 transform z-10 origin-[0] bg-white px-2 left-1 scale-100 -translate-y-1/2 top-1/2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4
+    }
+    .label_select2{
+        @apply absolute text-sm text-gray-400 duration-300 transform z-10 origin-[0] bg-white px-2 left-1 scale-75 -translate-y-4 top-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4
+    }
+    .text{
+        @apply text-[#007185] hover:cursor-pointer
+    }
+}
